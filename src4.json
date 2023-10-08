@@ -1,0 +1,918 @@
+[
+    {
+        "package_name": "github.com/crossplane/crossplane_golang",
+        "vulns": {
+            "CVE-2023-27484": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "1.11.0",
+                            "fixed_version": "1.11.2"
+                        },
+                        {
+                            "affected_from": "1.10.0",
+                            "fixed_version": "1.10.3"
+                        },
+                        {
+                            "fixed_version": "1.9.2"
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        "https://nvd.nist.gov/vuln/detail/CVE-2023-27484",
+                        "https://github.com/advisories/GHSA-v829-x6hh-cqfq",
+                        "https://github.com/crossplane/crossplane/security/advisories/GHSA-v829-x6hh-cqfq"
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "github.com/projectdiscovery/nuclei_golang",
+        "vulns": {
+            "CVE-2023-37896": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "1.0.0",
+                            "affected_to": "2.9.8",
+                            "fixed_version": "2.9.9"
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        "https://github.com/advisories/GHSA-2xx4-jj5v-6mff",
+                        "https://nvd.nist.gov/vuln/detail/CVE-2023-37896",
+                        "https://github.com/projectdiscovery/nuclei/pull/3927",
+                        "https://github.com/projectdiscovery/nuclei/security/advisories/GHSA-2xx4-jj5v-6mff",
+                        "https://github.com/projectdiscovery/nuclei/releases/tag/v2.9.9"
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "github.com/answerdev/answer_golang",
+        "vulns": {
+            "CVE-2023-0739": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "0.2.0",
+                            "affected_to": "1.0.3",
+                            "fixed_version": "1.0.4"
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        "https://github.com/answerdev/answer/commit/1ee34b884b905d14d4db457563176b77a974b992",
+                        "https://github.com/advisories/GHSA-qx34-47fc-vv79",
+                        "https://nvd.nist.gov/vuln/detail/CVE-2023-0739",
+                        "https://huntr.dev/bounties/93d7fac9-50be-4624-9096-45b89fbfd4ae"
+                    ],
+                    "action": "add"
+                }
+            ],
+            "CVE-2023-0744": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "0.2.0",
+                            "affected_to": "1.0.3",
+                            "fixed_version": "1.0.4"
+                        }
+                    ],
+                    "src": 777,
+                    "url": [                                    
+                        "http://packetstormsecurity.com/files/171733/Answerdev-1.0.3-Account-Takeover.html",
+                        "https://huntr.dev/bounties/35a0e12f-1d54-4fc0-8779-6a4949b7c434",
+                        "hom/answerdev/answer/commit/c1fa2b13f6b547b96da60b23350bbe2b29de542d",
+                        "https://nvd.nist.gov/vuln/detail/CVE-2023-0744",
+                        "https://github.com/advisories/GHSA-4cwh-8w4g-jxxh"
+                    ],
+                    "action": "add"
+                }
+            ],
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ],
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ],
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ],
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ],
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ],
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ],
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ],
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ],
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ],
+            
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    },
+    {
+        "package_name": "",
+        "vulns": {
+            "CVE": [
+                {
+                    "versions": [
+                        {
+                            "affected_from": "",
+                            "affected_to": "",
+                            "fixed_version": ""
+                        }
+                    ],
+                    "src": 777,
+                    "url": [
+                        ""
+                    ],
+                    "action": "add"
+                }
+            ]
+        }
+    }
+
+]

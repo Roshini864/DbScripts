@@ -34,12 +34,23 @@ def lang_Check(lang, temp):
         lang[6] = lang[6] + 1
 
 
-
-def get_packages_vulns( table_name, last_modified=0):
+def Latest_Table():
     dynamoclient = boto3.client('dynamodb', region_name='us-east-1',
-                        aws_access_key_id='ASIAYJ65BCN3FQ2MVBYF',
-                        aws_secret_access_key='EsrPcsUeK5bPXJhjQeifvxT0xcql0YPTeZ61tZJu',
-                        aws_session_token='IQoJb3JpZ2luX2VjEHEaCXVzLWVhc3QtMSJHMEUCIQDth3zV99QMoFE0ftomfxSKb0lX79S70eKTbiFBQnjv0wIgNaieqshlF/wQ/kSP9hrPPD1QsdNjYlPfl7ak054wOJoqkQMIehAAGgw1NzExNTczMjA1NjYiDKZnVQ06Apur5NIdTCruAo2zeNezDLNIZExgjw8NrMgCnyOphNpEYoyDEPtTTWyZQ+KYfmoaCT2PQK3z32wKUTkQLhTflrStYQ9Pxn0Ow7zTH6OFb8X+SOsJNNRJISFcULvwzoJKCvSqqhSr+uK6U/zyHiU9oRL3asG9HTjxjKcVq+XP4UljkVELjRwwiBDRaLGwXhE9/RcYZLutQkXcyT7BHWsHklH40djqojF9reFePX0PslwUFtUYwVqUQ03TJNnFvAa76Wg4QuCsisI7PmEBRotP91DPnIkphj4bVXkFCoUzjr/MOnJoDupRTX4PYxa0qwo6o1fBXuW8v2Fy3fx2HqQyWmzEBfn/US7dbPfhiTHchGS3qVKysXyZQnaJCXZWX1XhGGtDO8tiFl7jey+JwncmDqUQBUO33Q5tOeGueRyH+9TJSwUznzwgsOKn2seqr8OBq2KXZD3j/BVVliQC+un6SnqbpxsajpB8dEdzf0BEyhHgnAwoZxMVfDCL84CpBjqmAWAlGwesRT6ZjkFn2ynAxJJXWkTfAwlAPmuBYnfsUsuLfR+hYTXhU7cSbBQDFwy65VMD+1DXhkfkOJocAHeVsp58484ouCxfrRuo7szuqtPypbvpmXrhux3w2IYoI2nuYWOC1tHf6vK3+LpBRKB6EfdAKpBG+z2g2Z30t9kQsO0efcnWHs1hysjkZjkWoKWOh2IucDhHF+fvnp81lpDOOy1p5pyZ+pw=')
+                        aws_access_key_id='ASIAYJ65BCN3EMTGI5UJ',
+                        aws_secret_access_key='TfEtPuFq6Ct3emCYIe6218AoKunDvHU6mCxzzSih',
+                        aws_session_token='IQoJb3JpZ2luX2VjEJb//////////wEaCXVzLWVhc3QtMSJGMEQCIG+cTm79fQhbUy4JALQ+HKxrTDMhNWPVzoDyanfGrOqoAiBTTpBXb5FbqgpRPqJFjvYM0Basd9RTla5BYOrUJqB4QiqaAwif//////////8BEAAaDDU3MTE1NzMyMDU2NiIMkw8gbPzj7tqnGMs0Ku4C+gmfBIT64a1bBQdWpiZJKaJ485emrRxOPlREnAlTEy6eguWD/CBt9WG5VpIPp8X+TR7C2CT0Nu+e0g5G6rLsBw8eKSEpGUz+2FjL56Givpo3J6UJf43Pr3NnbTpZ866cYdW9CY+jFBusjqc7inm3bgauWY6bqn8eIUru8mDZ9yzLRmMk/xL31shMAJplhylTCoZ6SC91lXbOV4iT7RHdUFeBJd2MtZFREsYJuVUIyhn+il/B9GDAPlkm8v9NK0eCHkL8YXKsE2UIOofm2bUIhLxpQ8K4Z9HsuwMrokB4xmOtBPMQexfly3I1nxZSOL7kXcZvZDcvtbAfiVbn4fTlaMAxG6+O4PU9ukN/9DBpCpGbEOssF9sPbvcOLf3F+0WjUfHkBWp3ed96tDcBkRzZfdLr+6PABiFhXc4AiZEkBV2MqaOGDKzjXDYHHw4q2RuCfEl1l8dqGYGSgFfn/py22FfkGGU6YzkXDOlrWcmiMOiHiakGOqcB/guhW3U8sMlx5P/mx7EvQ9SSwRW3PHtMv9+XZ8J71ErwRFvVvtyGbMiFl0tI1yYFQHBXccHo4pEij/4h1qmm6EkJCmuJ3LBfPyf2a2yBh2ibjYR0msB1fmByPzhhWpDrSNnjO49KYtbY5oZAO1Me/+xdGdNFKv50MVJ1KlCQcH7uheTfZ7wtOSB8lsFpS6tI/iRSElXZHSMI0ggny/tPIjRpG1snS2w=')
+    paginator = dynamoclient.get_paginator('scan')
+    for page in paginator.paginate(TableName='aqua_source_metadataProd'):
+        for item in page.get('Items', []):
+            if 'latest_vulnerability_package_table' in item:
+                latest_table = item['latest_vulnerability_package_table']['S']
+        break
+    print(latest_table)
+    get_packages_vulns(latest_table, dynamoclient)
+
+
+
+def get_packages_vulns( table_name, dynamoclient, last_modified=0):
     mr_values = []
     src_4_data = []
     lang = [0, 0, 0, 0, 0, 0, 0, 0]
@@ -69,7 +80,6 @@ def get_packages_vulns( table_name, last_modified=0):
                                             lang_Check(lang, temp)
     print(len(mr_values))
     print(lang)
-    # print(src_4_data)
     print(len(src_4_data))
 
     output_file_path1 = "Src4_Mr5.json"
@@ -77,10 +87,9 @@ def get_packages_vulns( table_name, last_modified=0):
         json.dump(src_4_data, json_file, indent=4)
     print(f"DynamoDB items saved to {output_file_path1}")
 
-
     output_file_path2 = "SrcNot4_Mr5.json"
     with open(output_file_path2, 'w') as json_file:
         json.dump(mr_values, json_file, indent=4)
     print(f"DynamoDB items saved to {output_file_path2}")
 
-get_packages_vulns("vulnerable_packages-4Prod")
+Latest_Table()
