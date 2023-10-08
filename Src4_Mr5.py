@@ -36,9 +36,9 @@ def lang_Check(lang, temp):
 
 def Latest_Table():
     dynamoclient = boto3.client('dynamodb', region_name='us-east-1',
-                        aws_access_key_id='ASIAYJ65BCN3EMTGI5UJ',
-                        aws_secret_access_key='TfEtPuFq6Ct3emCYIe6218AoKunDvHU6mCxzzSih',
-                        aws_session_token='IQoJb3JpZ2luX2VjEJb//////////wEaCXVzLWVhc3QtMSJGMEQCIG+cTm79fQhbUy4JALQ+HKxrTDMhNWPVzoDyanfGrOqoAiBTTpBXb5FbqgpRPqJFjvYM0Basd9RTla5BYOrUJqB4QiqaAwif//////////8BEAAaDDU3MTE1NzMyMDU2NiIMkw8gbPzj7tqnGMs0Ku4C+gmfBIT64a1bBQdWpiZJKaJ485emrRxOPlREnAlTEy6eguWD/CBt9WG5VpIPp8X+TR7C2CT0Nu+e0g5G6rLsBw8eKSEpGUz+2FjL56Givpo3J6UJf43Pr3NnbTpZ866cYdW9CY+jFBusjqc7inm3bgauWY6bqn8eIUru8mDZ9yzLRmMk/xL31shMAJplhylTCoZ6SC91lXbOV4iT7RHdUFeBJd2MtZFREsYJuVUIyhn+il/B9GDAPlkm8v9NK0eCHkL8YXKsE2UIOofm2bUIhLxpQ8K4Z9HsuwMrokB4xmOtBPMQexfly3I1nxZSOL7kXcZvZDcvtbAfiVbn4fTlaMAxG6+O4PU9ukN/9DBpCpGbEOssF9sPbvcOLf3F+0WjUfHkBWp3ed96tDcBkRzZfdLr+6PABiFhXc4AiZEkBV2MqaOGDKzjXDYHHw4q2RuCfEl1l8dqGYGSgFfn/py22FfkGGU6YzkXDOlrWcmiMOiHiakGOqcB/guhW3U8sMlx5P/mx7EvQ9SSwRW3PHtMv9+XZ8J71ErwRFvVvtyGbMiFl0tI1yYFQHBXccHo4pEij/4h1qmm6EkJCmuJ3LBfPyf2a2yBh2ibjYR0msB1fmByPzhhWpDrSNnjO49KYtbY5oZAO1Me/+xdGdNFKv50MVJ1KlCQcH7uheTfZ7wtOSB8lsFpS6tI/iRSElXZHSMI0ggny/tPIjRpG1snS2w=')
+                        aws_access_key_id='',
+                        aws_secret_access_key='',
+                        aws_session_token='',
     paginator = dynamoclient.get_paginator('scan')
     for page in paginator.paginate(TableName='aqua_source_metadataProd'):
         for item in page.get('Items', []):
